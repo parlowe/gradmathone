@@ -121,6 +121,19 @@ Regression analysis indicates that relative interest in Kansas of the other part
 
 
 ## Conclusions and Future Directions 
+Returning to the central question of this project: Is the partnership between Taylor Swift and Travis Kelce legitimate, or simply a ploy to increase relative interest in their respective brands and thereby increase influence on popular culture?
+
+Based on the hypothesis testing in Aim One, while both parties have seen increases in their relative interest neither of the increases are significant. From Aim Two, the only significant predictor of these relative interest increases is the relative interest of the other party in Kansas. While there is indication in the regression model that attending more Chiefs games has a positive effect on Taylor Swift’s relative interest, these effects are not significant. 
+
+While we can’t definitely answer the central question based on this research, we can say that if Taylor Swift and Travis Kelce are using their relationship to increase their influence it hasn’t been working in any significant way. However, increases that have occurred could be the result of intersecting fan-bases due to the significant predictive power of the opposite party's relative interest in Kansas. Based on these conclusions and the analysis performed, I believe that their relationship is legitimate and we aren’t at risk for spending our money less rationally on Taylor Swift merchandise or Chiefs tickets. 
+
+Some ideas that I think would build on this insight include: 
+
+-Conducting U-testing with larger sample sizes to see if this decreases the significance of the before and after changes. 
+
+-Using financial or economic data that is more intimately linked to Travis Kelce or Taylor Swift to complete the analysis.
+
+-Conducting this analysis over a longer time period to see if any increases are sustained, and among which populations. 
 
 
 ## References
