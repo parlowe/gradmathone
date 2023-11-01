@@ -36,13 +36,29 @@ I also wanted to examine a population that was likely to demonstrate interaction
 
 Finally, I gathered the dates of the games that Swift attended and categorized the dates post 9/24 according to the number of games Swift had attended (Figure 4). The intent was to use this data in regression modeling. The dates of the games attended were 9/24, 10/1, 10/12, and 10/22.
 
-#### Figure 3: Number of Games Attended by Day Since 9/24
+#### Figure 4: Number of Games Attended by Day Since 9/24
   <p align="center">
   <img src="init_4.png" width="350">
 </p>
 
 
-##Methods
+## Methods
+To investigate hypothesis testing, a Wilcoxon Rank Sum test was performed. A null U-distribution for a 5 sample comparison of groups was constructed numerically, the relative interest scores for the five weeks before 9/24 were compared to the relative interest scores in the five days after 9/24. A nonparametric test was used to complete hypothesis testing because the relative interest scores for the past year were plotted on a histogram and there was an apparent skew in the data for Travis Kelce and the Kansas City Figures (Figures 5 and 6). 
+
+#### Figure 5: Histogram of Travis Kelce Relative Interest Scores
+  <p align="center">
+  <img src="init_6.png" width="350">
+</p>
+
+#### Figure 6: Histogram of Chiefs Relative Interest Scores
+  <p align="center">
+  <img src="init_7.png" width="350">
+</p>
+
+Since these distributions were constructed from greater than 30 observations and did not appear normal, t-testing from a t-distribution was not possible. A five sample U test was performed due to limitations in computing memory when attending to numerically construct larger null U-distributions. 
+
+Regression analysis was performed to predict the relative interest post 9/24 for Travis Kelce and Taylor Swift. Complex regression models were constructed, regressing the popularity of the opposite figure in Kansas, the number of games Taylor Swift had attended, and the mixed effects of the two parameters. T-tests were used to analyze the significance of each of the fitted parameters for these terms using the Python Stats Model OLS package. Overall significance of the model was assessed using the generated F-statistic and null F-distribution comparison. P-values greater than 0.05 were considered statistically significant. 
+
 
 ##Results 
 
