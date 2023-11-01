@@ -43,24 +43,56 @@ Finally, I gathered the dates of the games that Swift attended and categorized t
 
 
 ## Methods
-To investigate hypothesis testing, a Wilcoxon Rank Sum test was performed. A null U-distribution for a 5 sample comparison of groups was constructed numerically, the relative interest scores for the five weeks before 9/24 were compared to the relative interest scores in the five days after 9/24. A nonparametric test was used to complete hypothesis testing because the relative interest scores for the past year were plotted on a histogram and there was an apparent skew in the data for Travis Kelce and the Kansas City Figures (Figures 5 and 6). 
+To investigate hypothesis testing, a Wilcoxon Rank Sum test was performed. A null U-distribution for a 5 sample comparison of groups was constructed numerically (Figure 5).
 
-#### Figure 5: Histogram of Travis Kelce Relative Interest Scores
+#### Figure 5: Null U-Distribuion for 5 samples
+  <p align="center">
+  <img src="null_1png" width="350">
+</p>
+
+The relative interest scores for the five weeks before 9/24 were compared to the relative interest scores in the five days after 9/24. A nonparametric test was used to complete hypothesis testing because the relative interest scores for the past year were plotted on a histogram and there was an apparent skew in the data for Travis Kelce and the Kansas City Figures (Figures 6 and 7). 
+
+#### Figure 6: Histogram of Travis Kelce Relative Interest Scores
   <p align="center">
   <img src="init_6.png" width="350">
 </p>
 
-#### Figure 6: Histogram of Chiefs Relative Interest Scores
+#### Figure 7: Histogram of Chiefs Relative Interest Scores
   <p align="center">
   <img src="init_7.png" width="350">
 </p>
 
 Since these distributions were constructed from greater than 30 observations and did not appear normal, t-testing from a t-distribution was not possible. A five sample U test was performed due to limitations in computing memory when attending to numerically construct larger null U-distributions. 
 
-Regression analysis was performed to predict the relative interest post 9/24 for Travis Kelce and Taylor Swift. Complex regression models were constructed, regressing the popularity of the opposite figure in Kansas, the number of games Taylor Swift had attended, and the mixed effects of the two parameters. T-tests were used to analyze the significance of each of the fitted parameters for these terms using the Python Stats Model OLS package. Overall significance of the model was assessed using the generated F-statistic and null F-distribution comparison. P-values greater than 0.05 were considered statistically significant. 
+Regression analysis was performed to predict the relative interest post 9/24 for Travis Kelce and Taylor Swift. Complex regression models were constructed, regressing the popularity of the opposite figure in Kansas, the number of games Taylor Swift had attended, and the mixed effects of the two parameters. The complex regression models had the form: 
+$Relative Interest = ax_1 + b_x2+ cx_1x_2 +d$
+
+T-tests were used to analyze the significance of each of the fitted parameters for these terms using the Python Stats Model OLS package. Overall significance of the model was assessed using the generated F-statistic and null F-distribution comparison. P-values greater than 0.05 were considered statistically significant. 
 
 
-##Results 
+## Results 
+Hypothesis testing demonstrated no significant difference in any of the changes in relative interest before or after 9/24. The change in relative interest, the U test statistic and the p-value is reported for each party below.
+
+Taylor Swift: +7.8, U = 9, p=0.274
+Travis Kelce: +27.8, U = 5, = 0.075
+Kansas City Chiefs: -3.4, U = 18, p=0.155
+
+Since the Kansas City Chiefs experienced a decrease in relative interest, they were not included in regression analysis. 
+
+Complex regression analysis generated significant models predicting Taylor Swift relative interest post 9/24 (Table 1), and Travis Kelce Relative interest post 9/24 (Table 2).
+
+#### Table 1: Regression Analysis Output - Predicting Taylor Swift Relative Interest
+  <p align="center">
+  <img src="model_1.png" width="350">
+</p>
+
+##### Table 2: Regression Analysis Output - Predicting Travis Kelce Relative Interest
+  <p align="center">
+  <img src="model_2.png" width="350">
+</p>
+
+The only parameters found to be significant in the complex models were the relative interest of the opposite party. 
+
 
 
 ##Analysis 
