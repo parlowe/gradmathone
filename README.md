@@ -18,12 +18,12 @@ While I would have liked to analyze financial or economic data for this project,
 
 Relative interest is a normalization metric that is performed by Google to assign scores to data based on the number of searches in a given time frame. I generated relative interest scores by week from the past year (9/24/22-9/24/23) to serve as a sample of relative interest from before the 9/24 game, and relative interest scores by day for days since 9/24 (9/24/2023-10/26/2023). These gave me two datasets with 53 data points in the before sample (Figure 1), and 33 data points in the after sample (Figure 2). 
 
-### Figure 1: Realative Interest for All Parties by Week- Past Year
+#### Figure 1: Realative Interest for All Parties by Week- Past Year
 <p align="center">
   <img src="init_1.png" width="350"> </p>
 
-### Figure 2: Realative Interest for All Parties by Day - Since 9/24
-  <p
+#### Figure 2: Realative Interest for All Parties by Day - Since 9/24
+  <p align="center">
   <img src="init_2.png" width="350">
 </p>
 
