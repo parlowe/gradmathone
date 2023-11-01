@@ -47,7 +47,7 @@ To investigate hypothesis testing, a Wilcoxon Rank Sum test was performed. A nul
 
 #### Figure 5: Null U-Distribuion for 5 samples
   <p align="center">
-  <img src="null_1png" width="350">
+  <img src="null_1.png" width="350">
 </p>
 
 The relative interest scores for the five weeks before 9/24 were compared to the relative interest scores in the five days after 9/24. A nonparametric test was used to complete hypothesis testing because the relative interest scores for the past year were plotted on a histogram and there was an apparent skew in the data for Travis Kelce and the Kansas City Figures (Figures 6 and 7). 
@@ -65,7 +65,10 @@ The relative interest scores for the five weeks before 9/24 were compared to the
 Since these distributions were constructed from greater than 30 observations and did not appear normal, t-testing from a t-distribution was not possible. A five sample U test was performed due to limitations in computing memory when attending to numerically construct larger null U-distributions. 
 
 Regression analysis was performed to predict the relative interest post 9/24 for Travis Kelce and Taylor Swift. Complex regression models were constructed, regressing the popularity of the opposite figure in Kansas, the number of games Taylor Swift had attended, and the mixed effects of the two parameters. The complex regression models had the form: 
-$Relative Interest = ax_1 + b_x2+ cx_1x_2 +d$
+
+$Relative Interest = ax_1 + bx_2+ cx_1x_2 +d$
+
+Here $x_1 =$ games Taylor Swift has attended and $x_2 =$ realtive interest of opposite party
 
 T-tests were used to analyze the significance of each of the fitted parameters for these terms using the Python Stats Model OLS package. Overall significance of the model was assessed using the generated F-statistic and null F-distribution comparison. P-values greater than 0.05 were considered statistically significant. 
 
