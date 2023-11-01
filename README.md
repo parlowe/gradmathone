@@ -20,8 +20,8 @@ I also wanted to examine a population that was likely to demonstrate interaction
 
 Finally, I gathered the dates of the games that Swift attended and categorized the dates post 9/24 according to the number of games Swift had attended (Figure 4). The intent was to use this data in regression modeling. 
 <p align="center">
-  <img src="" width="350"><br>
-  <img src="" width="500">
+  <img src="init_1.png" width="350"><br>
+  <img src="init_2.png" width="500">
 </p>
 
 ##Methods
