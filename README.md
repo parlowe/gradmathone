@@ -29,7 +29,17 @@ Relative interest is a normalization metric that is performed by Google to assig
 
 I also wanted to examine a population that was likely to demonstrate interactions in the fanbases of Taylor Swift and Travis Kelce the most clearly. To do this, I generated relative interest scores by day for days since 9/24 (9/24/2023-10/26/2023) specifically localized to Kansas since this represents one of the states that considers the Kansas City Chiefs the home team (Figure 3). 
 
-Finally, I gathered the dates of the games that Swift attended and categorized the dates post 9/24 according to the number of games Swift had attended (Figure 4). The intent was to use this data in regression modeling. 
+#### Figure 3: Realative Interest for All Parties by Day - Since 9/24 in Kansas
+  <p align="center">
+  <img src="init_3.png" width="350">
+</p>
+
+Finally, I gathered the dates of the games that Swift attended and categorized the dates post 9/24 according to the number of games Swift had attended (Figure 4). The intent was to use this data in regression modeling. The dates of the games attended were 9/24, 10/1, 10/12, and 10/22.
+
+#### Figure 3: Number of Games Attended by Day Since 9/24
+  <p align="center">
+  <img src="init_4.png" width="350">
+</p>
 
 
 ##Methods
